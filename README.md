@@ -11,6 +11,7 @@ We provide tools to solve the following:
 - ISBN-10 Codes
 - Hamming Codes
 - Comma Codes
+
 - Arithmetic Codes
 ## Information
 - Calcuate the information entropy of codes

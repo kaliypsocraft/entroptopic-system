@@ -7,6 +7,8 @@ public class TypicalEntropy extends Entropy {
     public TypicalEntropy(double[] frequencies) {
         this.frequencies = frequencies;
     }
+    
+    @Override
     public double calculateEntropy() {
         double entropy = 0.0;
         for (double frequency : frequencies) {

@@ -19,6 +19,7 @@ public class MarkovEntropy extends Entropy{
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
                 entropy += - vector[i] * matrix[i][j] * logBaseTwo(matrix[i][j]);
+                System.out.println("- x1 * x2 * log (x2)" + " x1 = " + vector[i] + " x2 = " + matrix[i][j]);
             }
         }
         return entropy;

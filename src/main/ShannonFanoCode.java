@@ -1,8 +1,8 @@
-package main;
 
-import java.util.PriorityQueue;
 
 import static MathHelpers.LogConversionToBaseTwo.logBaseTwo;
+
+import java.util.PriorityQueue;
 
 
 public class ShannonFanoCode {

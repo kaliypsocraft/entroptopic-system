@@ -1,4 +1,4 @@
-package main.EntropyStrategies;
+package EntropyStrategies;
 import static MathHelpers.LogConversionToBaseTwo.logBaseTwo;
 
 public class TypicalEntropy extends Entropy {

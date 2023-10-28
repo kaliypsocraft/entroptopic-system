@@ -1,4 +1,4 @@
-package main.EntropyStrategies;
+package EntropyStrategies;
 
 public abstract class Entropy {
    

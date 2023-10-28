@@ -19,7 +19,3 @@ We provide tools to solve the following:
 
 ## Number Theory
 
-
-
-# entroptopic-system
-# entroptopic-system

@@ -1,5 +1,5 @@
 package EntropyStrategies;
-import static MathHelpers.LogConversionToBaseTwo.logBaseTwo;
+import static MathHelpers.LogConversion.logBaseChange;
 
 public class MarkovEntropy extends Entropy{
     private double[][] matrix;
@@ -18,7 +18,7 @@ public class MarkovEntropy extends Entropy{
         double entropy = 0.0;
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
-                entropy += - vector[i] * matrix[i][j] * logBaseTwo(matrix[i][j]);
+                entropy += - vector[i] * matrix[i][j] * logBaseChange(matrix[i][j], 2);
                 //System.out.println("- x1 * x2 * log (x2)" + " x1 = " + vector[i] + " x2 = " + matrix[i][j]);
             }
         }

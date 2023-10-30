@@ -1,13 +1,26 @@
 
 import org.junit.jupiter.api.Test;
 
+import EntropyStrategies.Entropy;
 import EntropyStrategies.MarkovEntropy;
+import EntropyStrategies.TypicalEntropy;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.jupiter.api.Assertions;
 
 public class InformationTest {
+    @Test
+    public void EntropyTests() {
+        double[] frequencies1 = {0.4, 0.3, 0.2,0.1};
+        Entropy entropy = new TypicalEntropy(frequencies1, 10);
+        assertTrue(entropy.calculateEntropy() >= 0.55 && entropy.calculateEntropy() <= 0.6);
+
+        double[] frequencies2 = {27/40.0, 9/40.0, 3/40.0, 1/40.0};
+        entropy = new TypicalEntropy(frequencies2, 2);
+        assertTrue(entropy.calculateEntropy() >= 1.275 && entropy.calculateEntropy() <= 1.3);
+        
+    }
     @Test
     public void ShannonCodeTests() {
 

@@ -1,6 +1,6 @@
 
 
-import static MathHelpers.LogConversionToBaseTwo.logBaseTwo;
+import static MathHelpers.LogConversion.logBaseChange;
 
 import java.util.ArrayList;
 import java.util.PriorityQueue;
@@ -10,6 +10,7 @@ import MathHelpers.Pair;
 
 
 public class ShannonFanoCode<T,V> {
+    private static final int BINARY = 2;
     private double[] frequencies;
     private ArrayList<Pair<Double,Double>> frequencyAndLengths = new ArrayList<>();
     
@@ -19,8 +20,8 @@ public class ShannonFanoCode<T,V> {
     public PriorityQueue<Double> calcuateLengths() {
         PriorityQueue<Double> lengths = new PriorityQueue<>();
         for (double frequency : frequencies) {
-            lengths.add(Math.ceil(-1 * logBaseTwo(frequency)));
-            frequencyAndLengths.add(new Pair<Double, Double>(frequency, Math.ceil(-1 * logBaseTwo(frequency))));
+            lengths.add(Math.ceil(-1 * logBaseChange(frequency, BINARY)));
+            frequencyAndLengths.add(new Pair<Double, Double>(frequency, Math.ceil(-1 * logBaseChange(frequency, BINARY))));
         }
         return lengths;
     }

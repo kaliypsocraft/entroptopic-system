@@ -5,6 +5,7 @@ import static MathHelpers.LogConversion.logBaseChange;
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 
+import MathHelpers.FreqLengthPair;
 import MathHelpers.GetAverageLength;
 import MathHelpers.Pair;
 
@@ -21,7 +22,7 @@ public class ShannonFanoCode<T,V> {
         PriorityQueue<Double> lengths = new PriorityQueue<>();
         for (double frequency : frequencies) {
             lengths.add(Math.ceil(-1 * logBaseChange(frequency, BINARY)));
-            frequencyAndLengths.add(new Pair<Double, Double>(frequency, Math.ceil(-1 * logBaseChange(frequency, BINARY))));
+            frequencyAndLengths.add(new FreqLengthPair<Double, Double>(frequency, Math.ceil(-1 * logBaseChange(frequency, BINARY))));
         }
         return lengths;
     }

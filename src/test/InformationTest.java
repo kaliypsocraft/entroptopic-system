@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import EntropyStrategies.Entropy;
 import EntropyStrategies.MarkovEntropy;
 import EntropyStrategies.TypicalEntropy;
+import MathHelpers.FermatFactorisation;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -38,7 +39,11 @@ public class InformationTest {
         MarkovEntropy test = new MarkovEntropy(matrix, vector);
         double result = test.calculateEntropy();
         assertTrue(result  <= 1.2 && result >= 1.15);
-       
+    }
+    @Test
+    public void FermatFactorisationTests() {
+        FermatFactorisation.calculate(9869.0);
+
 
     }
 }

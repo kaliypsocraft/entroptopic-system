@@ -4,6 +4,7 @@ import static MathHelpers.LogConversion.logBaseChange;
 public class TypicalEntropy extends Entropy {
     private double[] frequencies;
     private int base;
+    private double entropy;
     
     public TypicalEntropy(double[] frequencies, int base) {
         this.frequencies = frequencies;
@@ -16,7 +17,12 @@ public class TypicalEntropy extends Entropy {
         for (double frequency : frequencies) {
             entropy += - frequency * logBaseChange(frequency, base);
         }
+        this.entropy = entropy;
         return entropy;
+    }
+    @Override
+    public String toString() {
+        return "The entropy is: " + entropy;
     }
     
 }

@@ -6,6 +6,7 @@ public class MarkovEntropy extends Entropy{
     private double[] vector;
     private int column;
     private int row;
+    private double entropy;
     public MarkovEntropy(double[][] matrix, double[] vector) {
         this.matrix = matrix;
         this.vector = vector;
@@ -22,7 +23,12 @@ public class MarkovEntropy extends Entropy{
                 //System.out.println("- x1 * x2 * log (x2)" + " x1 = " + vector[i] + " x2 = " + matrix[i][j]);
             }
         }
+        this.entropy = entropy;
         return entropy;
+    }
+    @Override
+    public String toString() {
+        return "The MarkovEntropy is: " + entropy;
     }
     
 }

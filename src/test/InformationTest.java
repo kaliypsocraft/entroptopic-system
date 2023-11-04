@@ -5,10 +5,10 @@ import EntropyStrategies.Entropy;
 import EntropyStrategies.MarkovEntropy;
 import EntropyStrategies.TypicalEntropy;
 import MathHelpers.FermatFactorisation;
+import MathHelpers.PhiFunction;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import org.junit.jupiter.api.Assertions;
 
 public class InformationTest {
     @Test
@@ -42,7 +42,12 @@ public class InformationTest {
     }
     @Test
     public void FermatFactorisationTests() {
-        FermatFactorisation.calculate(9869.0);
+        FermatFactorisation.calculate(9869.0);   
+        FermatFactorisation.calculate(35581);
+    }
+     public void PhiFunctionTests() {
+        assertTrue(PhiFunction.calculate(72) == 24);
+        assertTrue(PhiFunction.calculate(289) == 16);
 
 
     }

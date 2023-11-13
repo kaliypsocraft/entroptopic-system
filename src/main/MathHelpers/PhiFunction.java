@@ -13,6 +13,7 @@ public class PhiFunction {
             for (Integer p : primes) {
                 result *= (1.0 - (1.0 / p));
             }
+            System.out.println("The number of co-prime integers of " + n + " is " + result * n);
            return result * n;
         }
     }

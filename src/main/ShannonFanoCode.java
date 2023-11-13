@@ -12,13 +12,10 @@ import MathHelpers.Pair;
 
 public class ShannonFanoCode<T,V> {
     private static final int BINARY = 2;
-    private double[] frequencies;
-    private ArrayList<Pair<Double,Double>> frequencyAndLengths = new ArrayList<>();
+    private static ArrayList<Pair<Double,Double>> frequencyAndLengths = new ArrayList<>();
     
-    public ShannonFanoCode(double[] frequencies) {
-        this.frequencies = frequencies;
-    }
-    public PriorityQueue<Double> calcuateLengths() {
+   
+    public static PriorityQueue<Double> calcuateLengths(double[] frequencies) {
         PriorityQueue<Double> lengths = new PriorityQueue<>();
         for (double frequency : frequencies) {
             lengths.add(Math.ceil(-1 * logBaseChange(frequency, BINARY)));
@@ -26,7 +23,7 @@ public class ShannonFanoCode<T,V> {
         }
         return lengths;
     }
-    public double getAverageLength() {
+    public static double getAverageLength(ArrayList<Pair<Double,Double>> frequencyAndLengths) {
         return GetAverageLength.calculate(frequencyAndLengths);
     }
 }

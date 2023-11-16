@@ -21,6 +21,7 @@ public class ShannonFanoCode<T,V> {
             lengths.add(Math.ceil(-1 * logBaseChange(frequency, BINARY)));
             frequencyAndLengths.add(new FreqLengthPair<Double, Double>(frequency, Math.ceil(-1 * logBaseChange(frequency, BINARY))));
         }
+        frequencyAndLengths.forEach(length -> System.out.println("Frequency " + length.getKey() + " Length: " + length.getValue()));
         return lengths;
     }
     public static double getAverageLength(ArrayList<Pair<Double,Double>> frequencyAndLengths) {

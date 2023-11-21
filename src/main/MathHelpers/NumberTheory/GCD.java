@@ -1,19 +1,21 @@
 package MathHelpers;
 
-import java.util.ArrayList;
 
 public class GCD {
-    private static int remainder = Integer.MAX_VALUE; 
-    private static ArrayList<Integer> coPrimes = new ArrayList<>();
+    protected static int remainder = Integer.MAX_VALUE;
     public static int gcd(int a, int b) {
         System.out.println("a: " + a + " b: " + b);
-        if (b == 1) {
-           System.out.println("Relatively Prime!");
-        }
         if (remainder == 0) {
             return 0;
         }
+        if (b == 1) {
+           return 1;
+        }
+        if (a / b > b) {
+            b = a / b;
+        }
         remainder = a % b;
+
         return gcd(b, remainder);
     }   
 }

@@ -1,4 +1,4 @@
-package MathHelpers;
+package MathHelpers.NumberTheory;
 
 /* 
  *  Basic prime number validator for non-large integers --> Courtesy of ChatGPT 3.5

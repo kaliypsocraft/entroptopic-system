@@ -1,4 +1,4 @@
-package MathHelpers;
+package MathHelpers.NumberTheory;
 
 import java.util.HashSet;
 import java.util.Set;

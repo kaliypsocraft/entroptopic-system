@@ -1,13 +1,14 @@
+package MathHelpers.Codes;
 
 
-import static MathHelpers.LogConversion.logBaseChange;
+import static MathHelpers.Miscellaneous.LogConversion.logBaseChange;
 
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 
-import MathHelpers.FreqLengthPair;
-import MathHelpers.GetAverageLength;
-import MathHelpers.Pair;
+import MathHelpers.Miscellaneous.FreqLengthPair;
+import MathHelpers.Miscellaneous.GetAverageLength;
+import MathHelpers.Miscellaneous.Pair;
 
 
 public class ShannonFanoCode<T,V> {

@@ -3,8 +3,9 @@ import org.junit.jupiter.api.Test;
 
 import EntropyStrategies.MarkovEntropy;
 import EntropyStrategies.TypicalEntropy;
-import MathHelpers.FermatFactorisation;
-import MathHelpers.PhiFunction;
+import MathHelpers.Information.Markov;
+import MathHelpers.NumberTheory.FermatFactorisation;
+import MathHelpers.NumberTheory.PhiFunction;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

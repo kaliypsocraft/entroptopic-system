@@ -1,4 +1,4 @@
-package MathHelpers;
+package MathHelpers.NumberTheory;
 
 public class FermatFactorisation {
     private static double input;

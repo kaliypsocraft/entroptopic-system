@@ -1,3 +1,4 @@
+package MathHelpers.Information;
 
 import EntropyStrategies.MarkovEntropy;
 

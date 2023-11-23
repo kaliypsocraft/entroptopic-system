@@ -1,4 +1,4 @@
-package MathHelpers;
+package MathHelpers.NumberTheory;
 
 public class getOrder {
     private static final int CO_PRIME = 1;

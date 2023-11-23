@@ -1,5 +1,5 @@
 package EntropyStrategies;
-import static MathHelpers.LogConversion.logBaseChange;
+import static MathHelpers.Miscellaneous.LogConversion.logBaseChange;
 
 public class MarkovEntropy{
         private static double entropy;

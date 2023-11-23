@@ -1,4 +1,4 @@
-package MathHelpers;
+package MathHelpers.Miscellaneous;
 
 public class FreqLengthPair<Frequency, Length> implements Pair<Frequency,Length> {
     private Frequency frequency;

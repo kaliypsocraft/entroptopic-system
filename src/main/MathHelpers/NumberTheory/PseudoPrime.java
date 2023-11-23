@@ -1,4 +1,4 @@
-package MathHelpers;
+package MathHelpers.NumberTheory;
 
 public class PseudoPrime {
     public static int determine(int[] bases, int n) {

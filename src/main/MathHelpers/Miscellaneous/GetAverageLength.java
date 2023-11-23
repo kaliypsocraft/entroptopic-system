@@ -1,4 +1,4 @@
-package MathHelpers;
+package MathHelpers.Miscellaneous;
 
 import java.util.ArrayList;
 

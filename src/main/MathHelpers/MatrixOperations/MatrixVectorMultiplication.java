@@ -1,4 +1,4 @@
-package MathHelpers;
+package MathHelpers.MatrixOperations;
 
 public class MatrixVectorMultiplication {
 
